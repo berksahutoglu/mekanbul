@@ -1,57 +1,29 @@
 extends layout
 block content
   #banner.page-header 
-    .row
+    .row 
       .col-lg-6
         h1 
-          | MekanBul
-          small &nbsp; Civardaki mekanları keşfet!
-  .row 
-    .row.list-group
-    .cow-xs-12.col-sm-12
-      .col-xs-12.list-group-item
-        h4
-          a(href='/mekan') Starbucks 
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-        span.badge.pull-right.badge-default 4km
-        p.address İyaşpark AVM
-        p   
-          span.label.label-warning Kahve
-          | &nbsp;
-        .cow-xs-12.col-sm-12
-      .col-xs-12.list-group-item
-        h4
-          a(href='/mekan') Gloria Jeans Coffee 
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-        span.badge.pull-right.badge-default 1km
-        p.address SDÜ DOĞU KAMPÜSÜ
-        p   
-          span.label.label-warning Kahve
-          | &nbsp;
-          .cow-xs-12.col-sm-12
-      .col-xs-12.list-group-item
-        h4
-          a(href='/mekan') Mackbear Coffee 
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-        span.badge.pull-right.badge-default 4km
-        p.address SDÜ Doğu Kampüsü
-        p   
-          span.label.label-warning Kahve
-          | &nbsp;
-
-    
+          | #{sayfaBaslik.sitead}
+          small &nbsp; #{sayfaBaslik.slogan}
+  .row
+    each mekan in mekanlar
+      .row.list-group 
+      .col-xs-12.col-sm-12 
+        .col-xs-12.list-group-item
+          h4 
+            a(href='/mekan') #{mekan.ad}
+            small &nbsp;
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          span.badge.pull-right.badge-deafult #{mekan.mesafe}
+          p.address #{mekan.adres} 
+          p 
+            span.label.label-warning Dünya Kahveleri 
+            | &nbsp;
+            span.label.label-warning Kekler
+            | &nbsp;
+            span.label.label-warning Pastalar
