@@ -2,17 +2,13 @@ extends layout
 block content
   .row.page-header 
     .col-lg-12 
-      h1 Starbucks 
+      h1 #{mekanBaslik} 
   .row 
     .col-xs-12.col-md-12 
       .row
         .col-xs-12.col-sm-6 
-          p.raiting 
-            span.glyphicon.glyphicon-star 
-            span.glyphicon.glyphicon-star 
-            span.glyphicon.glyphicon-star 
-            span.glyphicon.glyphicon-star 
-            span.glyphicon.glyphicon-star-empty 
+          p.raiting
+            +puanOlustur(mekanDetay.puan)
           p Centrum Garden AVM 
             .panel.panel-primary 
               .panel-heading 
@@ -56,7 +52,7 @@ block content
                 span.glyphicon.glyphicon-star 
                 span.glyphicon.glyphicon-star 
                 span.glyphicon.glyphicon-star-empty 
-                span.review-author İsmail Kalkan
+                span.review-author Berk Şahutoğlu
                 smalll.reviewTimestamp &nbsp; 13 Ekim 2022
               .col-xs-12
-                p Kahveler güzel ama biraz pahalı gibi.
+                p Kahveler güzel ama çok pahalı.
