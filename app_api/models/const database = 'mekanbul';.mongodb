@@ -1,0 +1,100 @@
+const database = 'mekanbul';
+use(database);
+db.mekanlar.insertOne(
+{
+  "ad": "Starbucks",
+  "adres": "Centrum Garden",
+  "puan": 3,
+  "imkanlar": [
+    "çay",
+    "kahve",
+    "pasta"
+  ],
+  "koordinat": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "saatler": [
+    {
+      "gunler": "Pazartesi-Cuma",
+      "acilis": "9:00",
+      "kapanis": "23:00",
+      "kapali": false
+    },
+    {
+      "gunler": "Cumartesi-Pazar",
+      "acilis": "11:00",
+      "kapanis": "17:00",
+      "kapali": false
+    }
+  ]
+}
+)
+db.mekanlar.insertOne(
+  {
+  "ad": "Gloria Jeans",
+  "adres": "Centrum Garden",
+  "puan": 5,
+  "imkanlar": [
+    "çay",
+    "kahve",
+    "pasta"
+  ],
+  "koordinat": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "saatler": [
+    {
+      "gunler": "Pazartesi-Cuma",
+      "acilis": "9:00",
+      "kapanis": "23:00",
+      "kapali": false
+    },
+    {
+      "gunler": "Cumartesi-Pazar",
+      "acilis": "11:00",
+      "kapanis": "17:00",
+      "kapali": false
+    }
+  ]
+}
+ );
+
+db.mekanlar.updateOne({"ad":"Starbucks"},
+  {$push: {"yorumlar": 
+    {
+      "_id": ObjectId(),
+      "yorumYapan": "Asım Sinan Yüksel",
+      "puan": 1,
+      "yorumMetni": "Berbaaaaaat",
+      "tarih": new Date()
+    }
+  }
+}
+)
+db.mekanlar.updateOne({"ad":"Gloria Jeans"},
+  {$push: {"yorumlar":
+     {
+      "_id": ObjectId(),
+      "yorumYapan": "Berk",
+      "puan": 5,
+      "yorumMetni": "Süper",
+      "tarih": new Date()
+    }
+   }
+}
+)
+
+db.mekanlar.updateOne({"ad":"Gloria Jeans"},
+  {$push: {"yorumlar": 
+    {
+      "_id": ObjectId(),
+      "yorumYapan": "Asım Sinan Yüksel",
+      "puan": 1,
+      "yorumMetni": "Berbaaaaaat",
+      "tarih": new Date()
+    }
+  }
+}
+)
