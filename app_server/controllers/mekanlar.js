@@ -53,8 +53,8 @@ const mekanBilgisi=function(req, res, next) {
         ],
         "imkanlar":["Kahve","Çay","Kek"],
         "koordinatlar":{
-            "enlem":"37,7",
-            "boylam":"30.5"
+            "enlem":"37.83226584629666",
+            "boylam":"30.524732239878013"
         },
         "yorumlar":[
             {

@@ -11,3 +11,8 @@ https://mekanbul5.berksahutoglu.repl.co/api/mekanlar/637a958efbf1ec4f852d24e6
 ### 3. Bir Mekana Ait Belirli Bir Yorumu Getir
 https://mekanbul5.berksahutoglu.repl.co/api/mekanlar/637a958efbf1ec4f852d24e6/yorumlar/637a958ffbf1ec4f852d24e8
 ![3](/resimler/yorum.png)"# odev5" 
+
+
+# MekanBul Rest API Test Sonucu
+![](/resimler/terminalsonuc.png)
+
