@@ -16,3 +16,4 @@ https://mekanbul5.berksahutoglu.repl.co/api/mekanlar/637a958efbf1ec4f852d24e6/yo
 # MekanBul Rest API Test Sonucu
 ![](/resimler/terminalsonuc.png)
 
+"# odev6" 
