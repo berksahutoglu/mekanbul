@@ -17,3 +17,4 @@ https://mekanbul5.berksahutoglu.repl.co/api/mekanlar/637a958efbf1ec4f852d24e6/yo
 ![](/resimler/terminalsonuc.png)
 
 "# odev6" 
+"# odev6" 
