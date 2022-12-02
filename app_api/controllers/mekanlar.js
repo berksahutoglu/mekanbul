@@ -67,7 +67,7 @@ const mekanEkle=function(req,res){
         ad: req.body.ad,
         adres: req.body.adres,
         imkanlar: req.body.imkanlar.split(","),
-        koordinatlar: [parseFloat(req.body.enlem),parseFloat(req.body.boylam)],
+        koordinat: [parseFloat(req.body.enlem),parseFloat(req.body.boylam)],
         saatler: [{
             gunler: req.body.gunler1,
             acilis: req.body.acilis1,
@@ -124,7 +124,7 @@ const mekanGuncelle=function(req,res){
         gelenMekan.ad=req.body.ad;
         gelenMekan.adres=req.body.adres;
         gelenMekan.imkanlar=req.body.imkanlar.split(",");
-        gelenMekan.koordinatlar=[parseFloat(req.body.enlem),parseFloat(req.body.boylam)];
+        gelenMekan.koordinat=[parseFloat(req.body.enlem),parseFloat(req.body.boylam)];
         gelenMekan.saatler = [
             {
                 gunler: req.body.gunler1,
