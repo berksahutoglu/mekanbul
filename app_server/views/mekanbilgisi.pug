@@ -24,7 +24,7 @@ block content
                     else
                       | #{saat.acilis}-#{saat.kapanis}
             .panel.panel-primary 
-                .panel-heading 
+                .panel-heading
                   h2.panel-title Neler Var?
                 .panel-body 
                   each imkan in mekanDetay.imkanlar
@@ -42,7 +42,8 @@ block content
     .col-xs-12 
       .panel.panel-primary 
         .panel-heading 
-          a.btn.btn-default.pull-right(href='/mekan/yorum/yeni') Yorum Ekle
+        -var mekanid=mekanDetay._id  
+          a.btn.btn-default.pull-right(href='/mekan/'+mekanid+'/yorum/yeni') Yorum Ekle
           h2.panel-title Müşteri Yorumları
         .panel-body.review-container 
           each yorum in mekanDetay.yorumlar
