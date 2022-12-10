@@ -12,7 +12,7 @@ var mesafeyiFormatla=function(mesafe){
     }else{
         yeniMesafe=parseInt(mesafe*1000,10);
         birim=" m";
-    }
+    }g
      return yeniMesafe+birim; 
 }
 var express = require('express');
